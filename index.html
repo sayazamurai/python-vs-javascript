@@ -1898,120 +1898,176 @@ console.log(someDict.five || "Doesn't exist")
     <div class="Q51 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Dictionary map
+# https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+original_list = {"one": 1, "two": 2}
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# {"one": 1, "two": 4}
+new_list = {key: value * value for key, value in original_list.items()}
+
+# one 1
+# two 4
+for key, value in new_list.items():
+    print(f"{key} {value}")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Dictionary map
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const originalDict = { one: 1, two: 2 }
+const newDict = {}
+
+Object.entries(originalDict).forEach(element => {
+  // newDict.element[0] doesn't work - for variable key use []
+  newDict[element[0]] = element[1] * element[1]
+})
+
+// one 1
+// two 4
+Object.entries(newDict).forEach(element => {
+  console.log(`${element[0]} ${element[1]}`)
+})
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q52 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Dictionary copy
+# https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+original_dict = {"one": 1, "two": 2, "three": 3}
+new_dict = original_dict.copy()
+original_dict["one"] = 100
+
+# one 1
+# two 2
+# three 3
+for key, value in new_dict.items():
+    print(f"{key} {value}")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Dictionary copy
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const originalDict = { one: 1, two: 2, three: 3 }
+const newDict = { ...originalDict }
+originalDict.one = 100
+
+// one 1
+// two 2
+// three 3
+Object.entries(newDict).forEach(element => {
+  console.log(`${element[0]} ${element[1]}`)
+})
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q53 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Dictionary to JSON
+# https://docs.python.org/3/library/json.html#json.dumps
+import json
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+some_dict = {"one": 1, "two": 2, "three": 3}
+
+# {
+#   "one": 1,
+#   "two": 2,
+#   "three": 3
+# }
+print(json.dumps(some_dict, indent=2))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Dictionary to JSON
+//
+// Use null as replacer and 2 as space parameter
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+const someDict = { one: 1, two: 2, three: 3 }
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// {
+//   "one": 1,
+//   "two": 2,
+//   "three": 3
+// }
+
+console.log(JSON.stringify(someDict, null, 2))
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q54 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Dictionary from JSON
+# https://docs.python.org/3/library/json.html#json.loads
+import json
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+some_json = """{
+  "one": 1,
+  "two": 2,
+  "three": 3
+}"""
+
+dict_from_json = json.loads(some_json)
+
+# 2
+print(dict_from_json["two"])
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Dictionary from JSON
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+const someJson = `{
+  "one": 1,
+  "two": 2,
+  "three": 3
+}`
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const dictFromJson = JSON.parse(someJson)
+
+// 2
+console.log(dictFromJson.two)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q55 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Dictionary variable key
+some_variable = 2
+some_dict = {(some_variable + 1): "three"}
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# three
+print(some_dict[3])
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Dictionary variable key
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names
+const someVariable = 2
+const someDict = { [someVariable + 1]: 'three' }
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// three
+console.log(someDict[3])
+</code></pre>
         </div>
       </div>
     </div>
@@ -2019,144 +2075,258 @@ console.log(Math.abs(50))</code></pre>
       <h2 class="tc" id="function">Function</h2>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Function definitions
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+def add(x, y):
+    print(f"Adding {x} and {y}")
+    return x + y
+
+
+# Adding 1 and 2
+# 3
+print(add(1, 2))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
-
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+          <pre><code class="language-javascript">// Function definitions
+const add = (x, y) => {
+  console.log(`Adding ${x} and ${y}`)
+  return x + y
+}
+// Adding 1 and 2
+// 3
+console.log(add(1, 2))
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q57 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Function: Keyword arguments
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+def add(a, b, c):
+    return a + b + c
+
+
+# 6
+print(add(b=1, a=2, c=3))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Function: keyword arguments
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// TODO: Fill in ?
+// const add = ({ ? }) => ?
+
+const add = ({ a, b, c }) => {
+  return a + b + c
+}
+
+// 6
+console.log(
+  add({
+    b: 1,
+    a: 2,
+    c: 3
+  })
+)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q58 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Function: Default arguments
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+def greet(name, word="Hello"):
+    print(f"{word} {name}")
+
+
+# Hello World
+greet("World")
+
+# Goodbye World
+greet("World", "Goodbye")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Function: Default arguments
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+const greet = (name, word = 'Hello') => {
+  console.log(`${word} ${name}`)
+}
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// Hello World
+greet('World')
+
+// Goodbye World
+greet('World', 'Goodbye')
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q59 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Function: Default keyword arguments
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+def greet(name="World", word="Hello"):
+    print(f"{word} {name}")
+
+
+# Goodbye World
+greet(word="Goodbye")
+
+# Hello Programming
+greet(name="Programming")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Function: Default keyword arguments
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Setting_a_function_parameter's_default_value
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// TODO: Fill in ?
+// const greet = ({ ? }) => ?
+const greet = ({ name = 'World', word = 'Hello' }) => {
+  console.log(`${word} ${name}`)
+}
+
+// Goodbye World
+greet({ word: 'Goodbye' })
+
+// Hello Programming
+greet({ name: 'Programming' })
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q60 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Function: Positional arguments
+# https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+def positional_args(a, b, *args):
+    print(a)
+    print(b)
+    for x in args:
+        print(x)
+
+
+# 1
+# 2
+# 3
+# 4
+positional_args(1, 2, 3, 4)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Function definitions
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const positionalArgs = (a, b, ...args) => {
+  console.log(a)
+  console.log(b)
+  args.forEach(element => {
+    console.log(element)
+  })
+}
+
+// 1
+// 2
+// 3
+// 4
+positionalArgs(1, 2, 3, 4)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q61 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Function: Variable keyword arguments
+# https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+def func_1(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} {value}")
+
+
+def func_2(x, *args, **kwargs):
+    print(x)
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(f"{key} {value}")
+
+
+# one 1
+# two 2
+func_1(one=1, two=2)
+
+# 1
+# 2
+# 3
+# a 4
+# b 5
+func_2(1, 2, 3, a=4, b=5)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Function: Variable keyword arguments
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// TODO: fill ?
+// const func1 = (?) => ?
+// const func2 = (x, ?, ...args) => ?
+const func1 = kwargs => {
+  Object.entries(kwargs).forEach(element => {
+    console.log(`${element[0]} ${element[1]}`)
+  })
+}
+
+//  ...args must be the last argument
+const func2 = (x, kwargs, ...args) => {
+  console.log(x)
+  args.forEach(element => {
+    console.log(element)
+  })
+  Object.entries(kwargs).forEach(element => {
+    console.log(`${element[0]} ${element[1]}`)
+  })
+}
+
+// one 1
+// two 2
+func1({ one: 1, two: 2 })
+
+// 1
+// 2
+// 3
+// a 4
+// b 5
+func2(1, { a: 4, b: 5 }, 2, 3)
+</code></pre>
         </div>
       </div>
     </div>
@@ -2164,24 +2334,157 @@ console.log(Math.abs(50))</code></pre>
       <h2 class="tc" id="class">Class</h2>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Class Basics
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+
+class Duck:
+    def __init__(self, name):
+        self.name = name
+
+    def fly(self):
+        print(f"{self.name} can fly")
+
+    # not @classmethod: call a method on an instance
+    # duck = Duck(...)
+    # duck.create(...)
+    #
+    # @classmethod: call a method on a class
+    # Duck.create(...)
+    @classmethod
+    def create(cls, name, kind):
+        if kind == "mallard":
+            return MallardDuck(name)
+        elif kind == "rubber":
+            return RubberDuck(name)
+        else:
+            # cls = Duck
+            return cls(name)
+
+
+class MallardDuck(Duck):
+    # @property:
+    # use duck.color instead of duck.color()
+    @property
+    def color(self):
+        return "green"
+
+
+class RubberDuck(Duck):
+    def __init__(self, name, eye_color="black"):
+        super().__init__(name)
+        self.eye_color = eye_color
+
+    def fly(self):
+        super().fly()
+        print(f"Just kidding, {self.name} cannot fly")
+
+    @property
+    def color(self):
+        return "yellow"
+
+
+regularDuck = Duck("reggie")
+# reggie can fly
+regularDuck.fly()
+
+mallardDuck = Duck.create("mal", "mallard")
+# mal
+print(mallardDuck.name)
+# green
+print(mallardDuck.color)
+
+rubberDuck = RubberDuck("vic", "blue")
+# vic can fly
+# Just kidding, vic cannot fly
+rubberDuck.fly()
+# yellow
+print(rubberDuck.color)
+# blue
+print(rubberDuck.eye_color)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Class basics
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+class Duck {
+  constructor(name) {
+    this.name = name
+  }
+
+  fly() {
+    console.log(`${this.name} can fly`)
+  }
+
+  // not static: call a method on an instance
+  // const duck = new Duck(...)
+  // duck.create(...)
+  //
+  // static: call a method on a class
+  // Duck.create(...)
+  static create(name, kind) {
+    if (kind === 'mallard') {
+      return new MallardDuck(name)
+    } else if (kind === 'rubber') {
+      return new RubberDuck(name)
+    } else {
+      // this = Duck
+      return new this(name)
+    }
+  }
+}
+
+class MallardDuck extends Duck {
+  // get:
+  // use duck.color instead of duck.color()
+  get color() {
+    return 'green'
+  }
+}
+
+class RubberDuck extends Duck {
+  constructor(name, eyeColor = 'black') {
+    super(name)
+    this.eyeColor = eyeColor
+  }
+
+  fly() {
+    super.fly()
+    console.log(`Just kidding, ${this.name} cannot fly`)
+  }
+
+  get color() {
+    return 'yellow'
+  }
+}
+
+const regularDuck = new Duck('reggie')
+// reggie can fly
+regularDuck.fly()
+
+const mallardDuck = Duck.create('mal', 'mallard')
+// mal
+console.log(mallardDuck.name)
+// green
+console.log(mallardDuck.color)
+
+rubberDuck = new RubberDuck('vic', 'blue')
+// vic can fly
+// Just kidding, vic cannot fly
+rubberDuck.fly()
+
+// yellow
+console.log(rubberDuck.color)
+
+// blue
+console.log(rubberDuck.eyeColor)
+</code></pre>
         </div>
       </div>
     </div>
