@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="https://unpkg.com/prismjs@1.15.0/themes/prism.css"/>
 </head>
 <body class="avenir dark-gray bg-washed-red">
+
+  <div class="bottom-right-button" style="position: fixed;
+  bottom: 35px;
+  right: 30px;
+  opacity: 0.5;
+  z-index: 5;">
+      <a class="bottom-right-button-link　js-bottom-right-button-link" href="">
+        <img class="bottom-right-icon" src="/static/images/right-bottom-buttun.png" style="width: 35px; height: 35px;">
+      </a>
+  </div>
+
   <div class="title-container center mw7">
     <h1 class="title f1 tc pt5 lh-title">
       How to write X in Python and JavaScript
@@ -20,7 +31,7 @@
   </div>
   <div class="tabele-of-contents center mw7 lh-copy">
     <h2>Table of Contents</h2>
-    <ul>
+    <ul class="list pl0">
       <a href="#math"><li>Math</li></a>
       <a href="#control-flow"><li>Control Flow</li></a>
       <a href="#string"><li>String</li></a>
@@ -81,11 +92,11 @@ print(round(1.5))
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
 
-// the smallest integer greater than or equal to x
+// 2 the smallest integer greater than or equal to x
 console.log(Math.ceil(1.5))
-// the largest integer less than or equal to x.
+// 1 the largest integer less than or equal to x.
 console.log(Math.floor(1.5))
-// round
+// 2 round
 console.log(Math.round(1.5))
 </code></pre>
         </div>
@@ -2492,6 +2503,9 @@ console.log(rubberDuck.eyeColor)
 
 <script src="https://unpkg.com/prismjs@1.15.0/prism.js"></script>
 <script src="https://unpkg.com/prismjs@1.15.0/components/prism-python.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/static/app.js"></script>
 
 </body>
 </html>
