@@ -94,24 +94,29 @@ console.log(Math.round(1.5))
     <div class="Q03 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Math: Max and min
+# https://docs.python.org/3/library/functions.html#max
+# https://docs.python.org/3/library/functions.html#min
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 100 max...Return the largest item in an iterable or the largest of two or more arguments
+print(max(100, 50))
+# 40 min...Return the smallest item in an iterable or the smallest of two or more arguments
+print(min(80, 40))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Math: Max and min
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
 
 // 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+console.log(Math.max(100, 50))
+
+// 40
+console.log(Math.min(80, 40))
+</code></pre>
         </div>
       </div>
     </div>
@@ -119,120 +124,314 @@ console.log(Math.abs(50))</code></pre>
       <h2 class="tc" id="control-flow">Control Flow</h2>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Control flow: If else
+# https://docs.python.org/3/tutorial/controlflow.html#if-statements
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+some_number = 3
+
+# Number is 3
+if some_number == 1:
+    print("Number is 1")
+elif some_number == 2:
+    print("Number is 2")
+elif some_number == 3:
+    print("Number is 3")
+else:
+    print("?")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Control flow: If else
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#Using_else_if
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const someNumber = 3
+
+// Number is 3
+if (someNumber === 1) {
+  console.log('Number is 1')
+} else if (someNumber === 2) {
+  console.log('Number is 2')
+} else if (someNumber === 3) {
+  console.log('Number is 3')
+} else {
+  console.log('?')
+}</code></pre>
         </div>
       </div>
     </div>
     <div class="Q05 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Control flow: Ternary
+x = 2
+y = 3
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# expr1 if... else expr2
+# if True  => return expr1
+# if False => return expr2
+
+# even
+print("even" if x % 2 == 0 else "odd")
+# odd
+print("even" if y % 2 == 0 else "odd")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Control flow: Ternary
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+const x = 2
+const y = 3
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// condition ? expr1 : expr2
+// => expr1 is True, expr2 is False
+// if True => return expr1
+// if False => return expr2
+
+// even
+console.log(x % 2 === 0 ? 'even' : 'odd')
+// odd
+console.log(y % 2 === 0 ? 'even' : 'odd')
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q06 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Control flow: Boolean
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# yes
+if "abc" == "abc":
+    print("yes")
+else:
+    print("no")
+
+# yes
+if "abc" != "def":
+    print("yes")
+else:
+    print("no")
+
+# no
+if True and False:
+    print("yes")
+else:
+    print("no")
+
+# yes
+if True or False:
+    print("yes")
+else:
+    print("no")
+
+# yes
+if not False:
+    print("yes")
+else:
+    print("no")
+
+# no
+if 0:
+    print("yes")
+else:
+    print("no")
+
+# no
+if "":
+    print("yes")
+else:
+    print("no")
+
+# no
+if []:
+    print("yes")
+else:
+    print("no")
+
+# no
+if None:
+    print("yes")
+else:
+    print("no")
+
+# yes
+if not not not None:
+    print("yes")
+else:
+    print("no")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Control flow: Boolean
+// https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// 'abc' === 'abc'
+// yes
+if ('abc' === 'abc') {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// 'abc' !== 'def'
+// yes
+if ('abc' !== 'def') {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// true && false
+// no
+if (true && false) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// true || false
+// yes
+if (true || false) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// !false
+// yes
+if (!false) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// 0
+// no
+if (0) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// ''
+// no
+if ('') {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// undefined
+// no
+if (undefined) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// null
+// no
+if (null) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+
+// !!!null
+// yes
+if (!!!null) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q07 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Control flow: Exceptions
+# https://docs.python.org/3/tutorial/errors.html
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# foo is not defined
+try:
+    foo()
+except NameError:
+    print("foo is not defined")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Control flow: Exceptions
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// foo is not defined
+
+try {
+  foo()
+} catch (error) {
+  console.log('foo is not defined')
+}
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q08 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># Control flow: Continue / Break
+# https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 1
+# 2
+# Fizz
+# 4
+# Buzz
+for number in range(1, 100):
+    if number == 3:
+        print("Fizz")
+        continue
+    if number == 5:
+        print("Buzz")
+        break
+    print(number)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Control flow: Continue / Break
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// 1
+// 2
+// Fizz
+// 4
+// Buzz
+
+for (let i = 1; i <= 100; i = i + 1) {
+  if (i === 3) {
+    console.log('Fizz')
+    continue
+  }
+
+  if (i === 5) {
+    console.log('Buzz')
+    break
+  }
+
+  console.log(i)
+}
+</code></pre>
         </div>
       </div>
     </div>
@@ -240,264 +439,337 @@ console.log(Math.abs(50))</code></pre>
       <h2 class="tc" id="string">String</h2>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String length
+# https://docs.python.org/3/library/functions.html#len
+some_string = "abcd"
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 4
+print(len(some_string))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String length
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
+const someString = 'abcd'
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// 4
+console.log(someString.length)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q10 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String interpolation
+x = "Hello"
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# Hello World
+print(f"{x} World")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String interpolation
+const x = 'Hello'
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// Hello World
+console.log(`${x} World`)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q11 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String: Multiline
+x = """------
+Line 1
+Line 2
+Line 3
+------"""
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# ------
+# Line 1
+# Line 2
+# Line 3
+# ------
+print(x)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// Strings Multiline
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Multi-line_strings
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const x = `------
+Line 1
+Line 2
+Line 3
+------`
+
+// ------
+// Line 1
+// Line 2
+// Line 3
+// ------
+console.log(x)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q12 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String to integer
+# https://docs.python.org/3/library/functions.html#int
+string_1 = "1"
+number_1 = int(string_1)
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 3
+print(number_1 + 2)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String to integer
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+const string1 = '1'
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// parseInt converts string into integer
+const number1 = parseInt(string1)
+
+// 3
+console.log(number1 + 2)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q13 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String contains
+# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 2 is in the string
+if "2" in "123":
+    print("2 is in the string")
+
+# 2 is not in the string
+if "2" not in "456":
+    print("2 is not in the string")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String contains
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// 2 is in the string
+if ('123'.includes('2')) {
+  console.log('2 is in the string')
+}
+
+// 2 is not in the string
+if (!'456'.includes('2')) {
+  console.log('2 is not in the string')
+}
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q14 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String substring
+# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+some_string = "0123456"
+
+# 234
+print(some_string[2:5])
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String substring
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+const someString = '0123456'
+
+// .substring(indexStart, indexEnd)
+// indexStart =>
+// The index of the first character to include in the returned substring.
+// indexEnd =>
+// Optional.The index of the first character to exclude from the returned substring.
+
+// 234
+console.log(someString.substring(2, 5))
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q15 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String join
+# https://docs.python.org/3/library/stdtypes.html#str.join
+some_list = ["a", "b", "c"]
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# a,b,c
+print(",".join(some_list))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String join
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+const someList = ['a', 'b', 'c']
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// a,b,c
+console.log(someList.join(','))
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q16 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String strip
+# https://docs.python.org/3/library/stdtypes.html#str.strip
+some_string = "   abc   "
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# abc
+print(some_string.strip())
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String strip
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
+const someString = '   abc   '
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// abc
+console.log(someString.trim())
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q17 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String split
+# https://docs.python.org/3/library/stdtypes.html#str.split
+some_string = "a,b,c"
+some_string_split = some_string.split(",")
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# # ['a', 'b', 'c']
+# print(some_string_split)
+
+# a
+print(some_string_split[0])
+# b
+print(some_string_split[1])
+# c
+print(some_string_split[2])
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String split
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+const someString = 'a,b,c'
+const someStringSplit = someString.split(',')
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// a
+console.log(someStringSplit[0])
+
+// b
+console.log(someStringSplit[1])
+
+// c
+console.log(someStringSplit[2])
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q18 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String replace
+# https://docs.python.org/3/library/stdtypes.html#str.replace
+some_string = "a b c d e"
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# a,b,c,d,e
+print(some_string.replace(" ", ","))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String replace
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+const someString = 'a b c d e'
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// Only changes the first space
+// a,b c d e
+// console.log(someString.replace(' ', ','))
+
+// Use / /g instead of ' ' to change every space
+// g = global (all)
+console.log(someString.replace(/ /g, ','))
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q19 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># String search
+# https://docs.python.org/3/library/re.html#re.search
+# https://github.com/zeeshanu/learn-regex
+import re
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# Has a number
+# d = digit
+if re.search(r"\d", "iphone 8"):
+    print("Has a number")
+
+# Doesn't have a number
+if not re.search(r"\d", "iphone x"):
+    print("Doesn't have a number")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// String search
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+// https://github.com/zeeshanu/learn-regex
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// Has a number
+if ('iphone 8'.match(/\d/g)) {
+  console.log('Has a number')
+}
+
+// Doesn't have a number
+// match() returns null
+if (!'iphone x'.match(/\d/g)) {
+  console.log("Doesn't have a number")
+}
+</code></pre>
         </div>
       </div>
     </div>
@@ -505,120 +777,178 @@ console.log(Math.abs(50))</code></pre>
       <h2 class="tc" id="list">List</h2>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># List iteration
+some_list = [6, 3, 5]
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 6
+# 3
+# 5
+for item in some_list:
+    print(item)
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// List iteration
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+const someList = [6, 3, 5]
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// The forEach() method executes a provided function once for each array element.
+
+// 6
+// 3
+// 5
+someList.forEach(element => {
+  console.log(element)
+})
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q21 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># List length
+# https://docs.python.org/3/library/functions.html#len
+some_list = [1, 4, 9]
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 3
+print(len(some_list))
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// List length
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
+const someList = [1, 4, 9]
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// 3
+console.log(someList.length)
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q22 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># List enumerate
+# https://docs.python.org/3/library/functions.html#enumerate
+some_list = [6, 3, 5]
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 0 6
+# 1 3
+# 2 5
+for i, item in enumerate(some_list):
+    print(f"{i} {item}")
+
+# If you're not using this in a for loop, use list()
+# list(enumerate(some_list)) # [(0, 6), (1, 3), (2, 5)]
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// List enumerate
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/foreach
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+const someList = [6, 3, 5]
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// forEach() method executes a provided function once for each array element.
+
+// 0 6
+// 1 3
+// 2 5
+
+someList.forEach(function(element, index) {
+  console.log(`${index} ${element}`)
+})
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q23 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># List contains
+# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# 2 is in the list
+if 2 in [1, 2, 3]:
+    print("2 is in the list")
+
+# 2 is not in the list
+if 2 not in [4, 5, 6]:
+    print("2 is not in the list")
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// List contains
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+// 2 is in the list
+if ([1, 2, 3].includes(2)) {
+  console.log('2 is in the list')
+}
+
+// 2 is not in the list
+if (![4, 5, 6].includes(2)) {
+  console.log('2 is not in the list')
+}
+</code></pre>
         </div>
       </div>
     </div>
     <div class="Q24 cf ph2-ns mb4">
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># List reverse
+# https://docs.python.org/3/library/functions.html#reversed
+# https://docs.python.org/3/library/stdtypes.html#typesseq-list
+some_list = [1, 2, 3, 4]
 
-# 100
-print(abs(-100))
-# 50
-print(abs(50))</code></pre>
+# <list_reverseiterator object at 0x1053a7ef0>
+# print(reversed(some_list))
+
+# reversed(some_list) is just an iterable.
+# To convert an iterable into a list, use list()
+reversed_list = list(reversed(some_list))
+
+# 4
+# 3
+# 2
+# 1
+for item in reversed_list:
+    print(item)
+
+# You can use an iterable instead of a list in a for loop
+# for item in reversed(some_list):
+</code></pre>
         </div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// List reverse
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+const someList = [1, 2, 3, 4]
 
-// 100
-console.log(Math.abs(-100))
-// 50
-console.log(Math.abs(50))</code></pre>
+someList.reverse()
+
+// 4
+// 3
+// 2
+// 1
+someList.forEach(element => {
+  console.log(element)
+})
+
+// * Careful: reverse is destructive. It also changes the original array * /
+// Array(4)[4, 3, 2, 1]
+// console.log(someList)
+</code></pre>
         </div>
       </div>
     </div>
