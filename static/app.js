@@ -6,4 +6,7 @@ $(function() {
     // function()をfunction(e)にする必要がある
     e.preventDefault()
   })
+
+  // https:// か http:// ではじまるリンクは新しいタブで開く
+  $("a[href^='https://'], a[href^='http://']").attr('target', '_blank')
 })
