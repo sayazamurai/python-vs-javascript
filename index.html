@@ -54,20 +54,20 @@
   <div class="tabele-of-contents center mw7 pb3 ph3 mb4">
     <h2 class="tc f3-ns f4 mb2">Table of Contents</h2>
     <ul class="list pl0 tc">
-      <li class="dib mh1"><a href="#math">Math</a></li>
-      <li class="dib mh1"><a href="#control-flow">Control Flow</a></li>
-      <li class="dib mh1"><a href="#string">String</a></li>
-      <li class="dib mh1"><a href="#list">List</a></li>
-      <li class="dib mh1"><a href="#dictionary">Dictionary</a></li>
-      <li class="dib mh1"><a href="#function">Function</a></li>
-      <li class="dib mh1"><a href="#class">Class</a></li>
+      <li class="dib mh2"><a href="#math">Math</a></li>
+      <li class="dib mh2"><a href="#control-flow">Control Flow</a></li>
+      <li class="dib mh2"><a href="#string">String</a></li>
+      <li class="dib mh2"><a href="#list">List/Array</a></li>
+      <li class="dib mh2"><a href="#dictionary">Dictionary/Object</a></li>
+      <li class="dib mh2"><a href="#function">Function</a></li>
+      <li class="dib mh2"><a href="#class">Class</a></li>
     </ul>
   </div>
   <div class="mw9 center ph3-ns ph2">
-    <div class="Q01 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="math">Math</h2>
-      <h3 class="tc normal f4-ns f5 mb2">Math: <strong>Absolute Value</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q01 cf ph2-ns mb5" id="math">
+      <h3 class="tc normal f3-ns f4 mb2">Math: <strong>Absolute Value</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#abs
 
@@ -77,7 +77,8 @@ print(abs(-100))
 print(abs(50))</code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 
@@ -88,9 +89,10 @@ console.log(Math.abs(50))</code></pre>
         </div>
       </div>
     </div>
-    <div class="Q02 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Math: <strong>Round numbers</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q02 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Math: <strong>Round numbers</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">import math
 
@@ -104,7 +106,8 @@ print(round(1.5))
         </div>
         <div>Python Docs: <a href="https://docs.python.org/3/library/math.html#math.ceil"><code>ceil</code></a>, <a href="https://docs.python.org/3/library/math.html#math.ceil"><code>floor</code></a>, <a href="https://docs.python.org/3/library/functions.html#round"><code>round</code></a></div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
@@ -120,9 +123,10 @@ console.log(Math.round(1.5))
         </div>
       </div>
     </div>
-    <div class="Q03 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Math: <strong>Max and Min</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q03 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Math: <strong>Max and Min</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#max
 # https://docs.python.org/3/library/functions.html#min
@@ -134,7 +138,8 @@ print(min(80, 40))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
@@ -148,10 +153,10 @@ console.log(Math.min(80, 40))
         </div>
       </div>
     </div>
-    <div class="Q04 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="control-flow">Control Flow</h2>
-      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>If else</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q04 cf ph2-ns mb5" id="control-flow">
+      <h3 class="tc normal f3-ns f4 mb2">Control Flow: <strong>If else</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#if-statements
 
@@ -169,7 +174,8 @@ else:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#Using_else_if
 
@@ -188,9 +194,10 @@ if (someNumber === 1) {
         </div>
       </div>
     </div>
-    <div class="Q05 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Ternary</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q05 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Control Flow: <strong>Ternary</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">x = 2
 y = 3
@@ -206,7 +213,8 @@ print("even" if y % 2 == 0 else "odd")
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
 const x = 2
@@ -225,9 +233,10 @@ console.log(y % 2 === 0 ? 'even' : 'odd')
         </div>
       </div>
     </div>
-    <div class="Q06 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Boolean</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q06 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Control Flow: <strong>Boolean</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># yes
 if "abc" == "abc":
@@ -291,7 +300,8 @@ else:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 
@@ -378,9 +388,10 @@ if (!!!null) {
         </div>
       </div>
     </div>
-    <div class="Q07 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Exceptions</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q07 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Control Flow: <strong>Exceptions</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/errors.html
 
@@ -392,7 +403,8 @@ except NameError:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
 
@@ -407,9 +419,10 @@ try {
         </div>
       </div>
     </div>
-    <div class="Q08 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Continue / Break</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q08 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Control Flow: <strong>Continue / Break</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
 
@@ -429,7 +442,8 @@ for number in range(1, 100):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
@@ -457,10 +471,10 @@ for (let i = 1; i <= 100; i = i + 1) {
         </div>
       </div>
     </div>
-    <div class="Q09 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="string">String</h2>
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Length</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q09 cf ph2-ns mb5" id="string">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Length</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#len
 some_string = "abcd"
@@ -470,7 +484,8 @@ print(len(some_string))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
 const someString = 'abcd'
@@ -481,9 +496,10 @@ console.log(someString.length)
         </div>
       </div>
     </div>
-    <div class="Q10 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Interpolation</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q10 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Interpolation</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">x = "Hello"
 
@@ -492,7 +508,8 @@ print(f"{x} World")
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">const x = 'Hello'
 
@@ -502,9 +519,10 @@ console.log(`${x} World`)
         </div>
       </div>
     </div>
-    <div class="Q11 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Multiline</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q11 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Multiline</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">x = """------
 Line 1
@@ -521,7 +539,8 @@ print(x)
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Multi-line_strings
 
@@ -541,9 +560,10 @@ console.log(x)
         </div>
       </div>
     </div>
-    <div class="Q12 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>String to Integer</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q12 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>String to Integer</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#int
 string_1 = "1"
@@ -554,7 +574,8 @@ print(number_1 + 2)
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 const string1 = '1'
@@ -568,9 +589,10 @@ console.log(number1 + 2)
         </div>
       </div>
     </div>
-    <div class="Q13 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Contains</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q13 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Contains</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
@@ -584,7 +606,8 @@ if "2" not in "456":
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
@@ -601,9 +624,10 @@ if (!'456'.includes('2')) {
         </div>
       </div>
     </div>
-    <div class="Q14 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Substring</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q14 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Substring</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
@@ -614,7 +638,8 @@ print(some_string[2:5])
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
 
@@ -632,9 +657,10 @@ console.log(someString.substring(2, 5))
         </div>
       </div>
     </div>
-    <div class="Q15 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Join</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q15 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Join</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.join
 some_list = ["a", "b", "c"]
@@ -644,7 +670,8 @@ print(",".join(some_list))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 const someList = ['a', 'b', 'c']
@@ -655,9 +682,10 @@ console.log(someList.join(','))
         </div>
       </div>
     </div>
-    <div class="Q16 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Strip</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q16 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Strip</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.strip
 some_string = "   abc   "
@@ -667,7 +695,8 @@ print(some_string.strip())
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
 const someString = '   abc   '
@@ -678,9 +707,10 @@ console.log(someString.trim())
         </div>
       </div>
     </div>
-    <div class="Q17 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Sprit</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q17 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Sprit</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.split
 some_string = "a,b,c"
@@ -698,7 +728,8 @@ print(some_string_split[2])
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 const someString = 'a,b,c'
@@ -716,9 +747,10 @@ console.log(someStringSplit[2])
         </div>
       </div>
     </div>
-    <div class="Q18 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Replace</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q18 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Replace</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.replace
 some_string = "a b c d e"
@@ -728,7 +760,8 @@ print(some_string.replace(" ", ","))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
@@ -745,9 +778,10 @@ console.log(someString.replace(/ /g, ','))
         </div>
       </div>
     </div>
-    <div class="Q19 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Search</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q19 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">String: <strong>Search</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/re.html#re.search
 # https://github.com/zeeshanu/learn-regex
@@ -764,7 +798,8 @@ if not re.search(r"\d", "iphone x"):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
@@ -784,10 +819,10 @@ if (!'iphone x'.match(/\d/g)) {
         </div>
       </div>
     </div>
-    <div class="Q20 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="list">List/Array</h2>
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Iteration</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q20 cf ph2-ns mb5" id="list">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Iteration</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">some_list = [6, 3, 5]
 
@@ -799,7 +834,8 @@ for item in some_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 const someList = [6, 3, 5]
@@ -816,9 +852,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q21 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Length</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q21 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Length</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#len
 some_list = [1, 4, 9]
@@ -828,7 +865,8 @@ print(len(some_list))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
 const someList = [1, 4, 9]
@@ -839,9 +877,10 @@ console.log(someList.length)
         </div>
       </div>
     </div>
-    <div class="Q22 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Enumerate</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q22 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Enumerate</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#enumerate
 some_list = [6, 3, 5]
@@ -857,7 +896,8 @@ for i, item in enumerate(some_list):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/foreach
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
@@ -876,9 +916,10 @@ someList.forEach(function(element, index) {
         </div>
       </div>
     </div>
-    <div class="Q23 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Contains</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q23 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Contains</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
@@ -892,7 +933,8 @@ if 2 not in [4, 5, 6]:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
@@ -909,9 +951,10 @@ if (![4, 5, 6].includes(2)) {
         </div>
       </div>
     </div>
-    <div class="Q24 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Reverse</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q24 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Reverse</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#reversed
 # https://docs.python.org/3/library/stdtypes.html#typesseq-list
@@ -936,7 +979,8 @@ for item in reversed_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 const someList = [1, 2, 3, 4]
@@ -958,9 +1002,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q25 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Range Iteration</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q25 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Range Iteration</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#typesseq-range
 
@@ -986,7 +1031,8 @@ for i in range(6, 3, -1):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// 0
 // 1
@@ -1014,9 +1060,10 @@ for (let i = 6; i > 3; i--) {
         </div>
       </div>
     </div>
-    <div class="Q26 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Append with Modification</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q26 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Append with Modification</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 some_list = [1, 2]
@@ -1031,7 +1078,8 @@ for x in some_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 const someList = [1, 2]
@@ -1048,9 +1096,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q27 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Append without Modification</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q27 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Append without Modification</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
 original_list = [1, 2]
@@ -1068,7 +1117,8 @@ for x in new_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Copy_an_array
 const originalList = [1, 2]
@@ -1088,9 +1138,10 @@ newList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q28 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Extend with Modification</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q28 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Extend with Modification</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 some_list = [1]
@@ -1105,7 +1156,8 @@ for x in some_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#A_better_way_to_concatenate_arrays
 // https://stackoverflow.com/a/35223022/114157
@@ -1123,9 +1175,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q29 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Extend without Modification</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q29 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Extend without Modification</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 original_list = [1]
@@ -1140,7 +1193,8 @@ for x in new_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 const originalList = [1]
@@ -1157,9 +1211,10 @@ newList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q30 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Prepend</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q30 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Prepend</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 some_list = [4, 5]
@@ -1174,7 +1229,8 @@ for x in some_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
 const someList = [4, 5]
@@ -1190,9 +1246,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q31 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Remove</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q31 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Remove</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 some_list = ["a", "b", "c"]
@@ -1205,7 +1262,8 @@ for x in some_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 const someList = ['a', 'b', 'c']
@@ -1220,9 +1278,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q32 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Pop</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q32 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Pop</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 
@@ -1240,7 +1299,8 @@ for x in some_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
@@ -1262,9 +1322,10 @@ someList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q33 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Index</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q33 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Index</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 some_list = ["a", "b", "c", "d", "e"]
@@ -1274,7 +1335,8 @@ print(some_list.index("c"))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 const someList = ['a', 'b', 'c', 'd', 'e']
@@ -1285,9 +1347,10 @@ console.log(someList.indexOf('c'))
         </div>
       </div>
     </div>
-    <div class="Q34 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Copy</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q34 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Copy</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 original_list = [1, 2, 3]
@@ -1304,7 +1367,8 @@ for x in new_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Copy_an_array
 
@@ -1323,9 +1387,10 @@ newList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q35 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Map</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q35 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Map</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
@@ -1340,7 +1405,8 @@ for x in new_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
@@ -1358,9 +1424,10 @@ newList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q36 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Map (Nested)</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q36 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Map (Nested)</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
@@ -1382,7 +1449,8 @@ print(combined_list[1][1])
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
@@ -1407,9 +1475,10 @@ console.log(conbinedList[1][1])
         </div>
       </div>
     </div>
-    <div class="Q37 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Filter</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q37 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Filter</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
@@ -1424,7 +1493,8 @@ for x in new_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
@@ -1441,9 +1511,10 @@ newList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q38 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Sum</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q38 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Sum</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sum
 some_list = [1, 2, 3]
@@ -1453,7 +1524,8 @@ print(sum(some_list))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 const someList = [1, 2, 3]
@@ -1465,9 +1537,10 @@ console.log(someList.reduce(reducer))
         </div>
       </div>
     </div>
-    <div class="Q39 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Zip</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q39 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Zip</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#zip
 list_1 = [1, 3, 5]
@@ -1481,7 +1554,8 @@ for x, y in zip(list_1, list_2):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">const list1 = [1, 3, 5]
 const list2 = [2, 4, 6]
@@ -1507,9 +1581,10 @@ zippedList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q40 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Slice</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q40 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Slice</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 original_list = ["a", "b", "c", "d", "e"]
@@ -1523,7 +1598,8 @@ for x in new_list:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 const originalList = ['a', 'b', 'c', 'd', 'e']
@@ -1539,9 +1615,10 @@ newList.forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q41 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Sort</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q41 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Sort</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sorted
 some_list = [4, 2, 1, 3]
@@ -1555,7 +1632,8 @@ for item in sorted(some_list):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const someList = [4, 2, 1, 3]
@@ -1571,9 +1649,10 @@ someList.sort().forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q42 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Sort Custom</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q42 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">List/Array: <strong>Sort Custom</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sorted
 some_list = [["c", 2], ["b", 3], ["a", 1]]
@@ -1586,7 +1665,8 @@ for item in sorted(some_list, key=lambda x: x[1]):
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const someList = [['c', 2], ['b', 3], ['a', 1]]
@@ -1605,10 +1685,10 @@ someList
         </div>
       </div>
     </div>
-    <div class="Q43 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="dictionary">Dictionary/Object</h2>
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Iteration</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q43 cf ph2-ns mb5" id="dictionary">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Iteration</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.items
 
@@ -1624,7 +1704,8 @@ for key, value in some_dict.items():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
 
@@ -1641,9 +1722,10 @@ Object.entries(someDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q44 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Contains</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q44 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Contains</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
@@ -1659,7 +1741,8 @@ if "four" not in some_dict:
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
 
@@ -1678,9 +1761,10 @@ if (!someDict.hasOwnProperty('four')) {
         </div>
       </div>
     </div>
-    <div class="Q45 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Add with Modification</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q45 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Add with Modification</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">original_dict = {"one": 1, "two": 2}
 original_dict["three"] = 3
@@ -1694,7 +1778,8 @@ for key, value in original_dict.items():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">const originalDict = { one: 1, two: 2 }
 originalDict.three = 3
@@ -1709,9 +1794,10 @@ Object.entries(originalDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q46 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Add without Modification</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q46 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Add without Modification</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
 
@@ -1727,7 +1813,8 @@ for key, value in new_dict.items():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
 const originalDict = { one: 1, two: 2 }
@@ -1744,9 +1831,10 @@ Object.entries(newDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q47 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Keys</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q47 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Keys</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.keys
 
@@ -1762,7 +1850,8 @@ for x in some_dict.keys():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
@@ -1778,9 +1867,10 @@ Object.keys(someDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q48 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Values</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q48 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Values</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.values
 some_dict = {"one": 1, "two": 2, "three": 3}
@@ -1796,7 +1886,8 @@ for x in some_dict.values():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
 const someDict = {
@@ -1815,9 +1906,10 @@ Object.values(someDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q49 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Remove</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q49 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Remove</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict
 some_dict = {"one": 1, "two": 2, "three": 3}
@@ -1831,7 +1923,8 @@ for key, value in some_dict.items():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
 const someDict = { one: 1, two: 2, three: 3 }
@@ -1845,9 +1938,10 @@ Object.entries(someDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q50 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Get</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q50 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Get</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict
 
@@ -1860,7 +1954,8 @@ print(some_dict.get("five", "Doesn't exist"))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR
 
@@ -1872,9 +1967,10 @@ console.log(someDict.five || "Doesn't exist")
         </div>
       </div>
     </div>
-    <div class="Q51 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Map</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q51 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Map</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 original_list = {"one": 1, "two": 2}
@@ -1889,7 +1985,8 @@ for key, value in new_list.items():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
@@ -1910,9 +2007,10 @@ Object.entries(newDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q52 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Copy</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q52 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Copy</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 
@@ -1928,7 +2026,8 @@ for key, value in new_dict.items():
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
 
@@ -1946,9 +2045,10 @@ Object.entries(newDict).forEach(element => {
         </div>
       </div>
     </div>
-    <div class="Q53 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>to JSON</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q53 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>to JSON</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/json.html#json.dumps
 import json
@@ -1964,7 +2064,8 @@ print(json.dumps(some_dict, indent=2))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">//
 // Use null as replacer and 2 as space parameter
@@ -1982,9 +2083,10 @@ console.log(JSON.stringify(someDict, null, 2))
         </div>
       </div>
     </div>
-    <div class="Q54 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>from JSON</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q54 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>from JSON</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/json.html#json.loads
 import json
@@ -2002,7 +2104,8 @@ print(dict_from_json["two"])
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 const someJson = `{
@@ -2019,9 +2122,10 @@ console.log(dictFromJson.two)
         </div>
       </div>
     </div>
-    <div class="Q55 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Variable Key</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q55 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Dictionary/Object: <strong>Variable Key</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">some_variable = 2
 some_dict = {(some_variable + 1): "three"}
@@ -2031,7 +2135,8 @@ print(some_dict[3])
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names
 const someVariable = 2
@@ -2043,10 +2148,10 @@ console.log(someDict[3])
         </div>
       </div>
     </div>
-    <div class="Q56 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="function">Function</h2>
-      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Definitions</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q56 cf ph2-ns mb5" id="function">
+      <h3 class="tc normal f3-ns f4 mb2">Function: <strong>Definitions</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def add(x, y):
     print(f"Adding {x} and {y}")
@@ -2059,7 +2164,8 @@ print(add(1, 2))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">const add = (x, y) => {
   console.log(`Adding ${x} and ${y}`)
@@ -2072,9 +2178,10 @@ console.log(add(1, 2))
         </div>
       </div>
     </div>
-    <div class="Q57 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Keyword Arguments</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q57 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Function: <strong>Keyword Arguments</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def add(a, b, c):
     return a + b + c
@@ -2085,7 +2192,8 @@ print(add(b=1, a=2, c=3))
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// TODO: Fill in ?
 // const add = ({ ? }) => ?
@@ -2106,9 +2214,10 @@ console.log(
         </div>
       </div>
     </div>
-    <div class="Q58 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Default Arguments</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q58 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Function: <strong>Default Arguments</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def greet(name, word="Hello"):
     print(f"{word} {name}")
@@ -2122,7 +2231,8 @@ greet("World", "Goodbye")
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
 const greet = (name, word = 'Hello') => {
@@ -2138,9 +2248,10 @@ greet('World', 'Goodbye')
         </div>
       </div>
     </div>
-    <div class="Q59 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Default Keyword Arguments</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q59 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Function: <strong>Default Keyword Arguments</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def greet(name="World", word="Hello"):
     print(f"{word} {name}")
@@ -2154,7 +2265,8 @@ greet(name="Programming")
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Setting_a_function_parameter's_default_value
 
@@ -2173,9 +2285,10 @@ greet({ name: 'Programming' })
         </div>
       </div>
     </div>
-    <div class="Q60 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Positional Arguments</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q60 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Function: <strong>Positional Arguments</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
 
@@ -2195,7 +2308,8 @@ positional_args(1, 2, 3, 4)
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
@@ -2216,9 +2330,10 @@ positionalArgs(1, 2, 3, 4)
         </div>
       </div>
     </div>
-    <div class="Q61 cf ph2-ns mb4">
-      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Variable Keyword Arguments</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q61 cf ph2-ns mb5">
+      <h3 class="tc normal f3-ns f4 mb2">Function: <strong>Variable Keyword Arguments</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
 
@@ -2249,7 +2364,8 @@ func_2(1, 2, 3, a=4, b=5)
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
@@ -2287,10 +2403,10 @@ func2(1, { a: 4, b: 5 }, 2, 3)
         </div>
       </div>
     </div>
-    <div class="Q62 cf ph2-ns mb4">
-      <h2 class="tc f3-ns f4" id="class">Class</h2>
-      <h3 class="tc normal f4-ns f5 mb2">Class: <strong>Basics</strong></h3>
-      <div class="fl w-100 w-50-l pa2">
+    <div class="Q62 cf ph2-ns mb5" id="class">
+      <h3 class="tc normal f3-ns f4 mb2">Class: <strong>Basics</strong></h3>
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">Python 3</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">class Duck:
     def __init__(self, name):
@@ -2359,7 +2475,8 @@ print(rubberDuck.eye_color)
 </code></pre>
         </div>
       </div>
-      <div class="fl w-100 w-50-l pa2">
+      <div class="fl w-100 w-50-l pa2 mb3">
+        <h4 class="f5 mt0 mb2">JavaScript (ES2015)</h4>
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
