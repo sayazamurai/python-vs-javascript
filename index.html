@@ -6,7 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/prismjs@1.15.0/themes/prism.css"/>
+  <link rel="stylesheet" href="static/prism-base16-atelierplateau.light.css"/>
+  <style>
+    a {
+      color: inherit;
+    }
+
+    a:hover {
+      color: #D5008F;
+    }
+  </style>
 </head>
 <body class="avenir dark-gray bg-washed-red">
 
@@ -17,7 +26,7 @@
   opacity: 0.5;
   z-index: 5;">
       <a class="bottom-right-button-link js-bottom-right-button-link" href="#">
-        <img class="bottom-right-icon" src="static/images/right-bottom-buttun.png" style="width: 40px; height: 40px;">
+        <img class="bottom-right-icon" src="static/images/right-bottom-button.png" style="width: 40px; height: 40px;">
       </a>
   </div>
 
@@ -27,8 +36,8 @@
     </h1>
   </div>
   <div class="header-text-container center mw7 pb3">
-    <p class="header-text lh-copy f4">Python and JavaScript are two of the most popular programming languages.
-(<a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">https://stackoverflow.blog/2017/09/06/incredible-growth-python/</a>) If you're are Python programmer learning JavaScript, or a JavaScript programmer learning Python, this handy cheat sheet might help you. Pull requests are welcome! (<a href="https://github.com/sayazamurai/python-vs-javascript">https://github.com/sayazamurai/python-vs-javascript</a>)</p>
+    <p class="header-text lh-copy f4">Python and JavaScript are <a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">two of the most popular programming languages</a>.
+ If you're are Python programmer learning JavaScript, or a JavaScript programmer learning Python, this handy cheat sheet might help you. <a href="https://github.com/sayazamurai/python-vs-javascript">Pull requests are welcome</a>!</p>
   </div>
   <div class="about-the-author center mw7 lh-copy pb3">
     <h2>About the Author</h2>
@@ -54,10 +63,10 @@
   <div class="mw9 center ph3-ns">
     <div class="Q01 cf ph2-ns mb4">
       <h2 class="tc" id="math">Math</h2>
+      <h3 class="tc normal">Math: Absolute Value</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Absolute value
-# https://docs.python.org/3/library/functions.html#abs
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#abs
 
 # 100
 print(abs(-100))
@@ -67,8 +76,7 @@ print(abs(50))</code></pre>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Absolute value
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 
 // 100
 console.log(Math.abs(-100))
@@ -78,13 +86,10 @@ console.log(Math.abs(50))</code></pre>
       </div>
     </div>
     <div class="Q02 cf ph2-ns mb4">
+      <h3 class="tc normal">Math: Round numbers</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Round numbers
-# https://docs.python.org/3/library/math.html#math.ceil
-# https://docs.python.org/3/library/math.html#math.floor
-# https://docs.python.org/3/library/functions.html#round
-import math
+          <pre><code class="language-python">import math
 
 # 2 ceil...the smallest integer greater than or equal to x
 print(math.ceil(1.5))
@@ -94,11 +99,11 @@ print(math.floor(1.5))
 print(round(1.5))
 </code></pre>
         </div>
+        <div>Python Docs: <a href="https://docs.python.org/3/library/math.html#math.ceil"><code>ceil</code></a>, <a href="https://docs.python.org/3/library/math.html#math.ceil"><code>floor</code></a>, <a href="https://docs.python.org/3/library/functions.html#round"><code>round</code></a></div>
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Round numbers
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
 
@@ -113,10 +118,10 @@ console.log(Math.round(1.5))
       </div>
     </div>
     <div class="Q03 cf ph2-ns mb4">
+      <h3 class="tc normal">Math: Max and Min</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Math: Max and min
-# https://docs.python.org/3/library/functions.html#max
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#max
 # https://docs.python.org/3/library/functions.html#min
 
 # 100 max...Return the largest item in an iterable or the largest of two or more arguments
@@ -128,8 +133,7 @@ print(min(80, 40))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Math: Max and min
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
 
 // 100
@@ -143,10 +147,10 @@ console.log(Math.min(80, 40))
     </div>
     <div class="Q04 cf ph2-ns mb4">
       <h2 class="tc" id="control-flow">Control Flow</h2>
+      <h3 class="tc normal">Control Flow: If else</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Control flow: If else
-# https://docs.python.org/3/tutorial/controlflow.html#if-statements
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#if-statements
 
 some_number = 3
 
@@ -164,8 +168,7 @@ else:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Control flow: If else
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#Using_else_if
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#Using_else_if
 
 const someNumber = 3
 
@@ -183,10 +186,10 @@ if (someNumber === 1) {
       </div>
     </div>
     <div class="Q05 cf ph2-ns mb4">
+      <h3 class="tc normal">Control Flow: Ternary</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Control flow: Ternary
-x = 2
+          <pre><code class="language-python">x = 2
 y = 3
 
 # expr1 if... else expr2
@@ -202,8 +205,7 @@ print("even" if y % 2 == 0 else "odd")
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Control flow: Ternary
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
 const x = 2
 const y = 3
 
@@ -221,11 +223,10 @@ console.log(y % 2 === 0 ? 'even' : 'odd')
       </div>
     </div>
     <div class="Q06 cf ph2-ns mb4">
+      <h3 class="tc normal">Control Flow: Boolean</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Control flow: Boolean
-
-# yes
+          <pre><code class="language-python"># yes
 if "abc" == "abc":
     print("yes")
 else:
@@ -289,8 +290,7 @@ else:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Control flow: Boolean
-// https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 
 // 'abc' === 'abc'
 // yes
@@ -376,10 +376,10 @@ if (!!!null) {
       </div>
     </div>
     <div class="Q07 cf ph2-ns mb4">
+      <h3 class="tc normal">Control Flow: Exceptions</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Control flow: Exceptions
-# https://docs.python.org/3/tutorial/errors.html
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/errors.html
 
 # foo is not defined
 try:
@@ -391,8 +391,7 @@ except NameError:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Control flow: Exceptions
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
 
 // foo is not defined
 
@@ -406,10 +405,10 @@ try {
       </div>
     </div>
     <div class="Q08 cf ph2-ns mb4">
+      <h3 class="tc normal">Control Flow: Continue / Break</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Control flow: Continue / Break
-# https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
 
 # 1
 # 2
@@ -429,8 +428,7 @@ for number in range(1, 100):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Control flow: Continue / Break
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
 
 // 1
@@ -458,10 +456,10 @@ for (let i = 1; i <= 100; i = i + 1) {
     </div>
     <div class="Q09 cf ph2-ns mb4">
       <h2 class="tc" id="string">String</h2>
+      <h3 class="tc normal">String: Length</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String length
-# https://docs.python.org/3/library/functions.html#len
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#len
 some_string = "abcd"
 
 # 4
@@ -471,8 +469,7 @@ print(len(some_string))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String length
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
 const someString = 'abcd'
 
 // 4
@@ -482,10 +479,10 @@ console.log(someString.length)
       </div>
     </div>
     <div class="Q10 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Interpolation</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String interpolation
-x = "Hello"
+          <pre><code class="language-python">x = "Hello"
 
 # Hello World
 print(f"{x} World")
@@ -494,8 +491,7 @@ print(f"{x} World")
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String interpolation
-const x = 'Hello'
+          <pre><code class="language-javascript">const x = 'Hello'
 
 // Hello World
 console.log(`${x} World`)
@@ -504,10 +500,10 @@ console.log(`${x} World`)
       </div>
     </div>
     <div class="Q11 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Multiline</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String: Multiline
-x = """------
+          <pre><code class="language-python">x = """------
 Line 1
 Line 2
 Line 3
@@ -524,8 +520,7 @@ print(x)
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Strings Multiline
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Multi-line_strings
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Multi-line_strings
 
 const x = `------
 Line 1
@@ -544,10 +539,10 @@ console.log(x)
       </div>
     </div>
     <div class="Q12 cf ph2-ns mb4">
+      <h3 class="tc normal">String: String to Integer</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String to integer
-# https://docs.python.org/3/library/functions.html#int
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#int
 string_1 = "1"
 number_1 = int(string_1)
 
@@ -558,8 +553,7 @@ print(number_1 + 2)
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String to integer
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 const string1 = '1'
 
 // parseInt converts string into integer
@@ -572,10 +566,10 @@ console.log(number1 + 2)
       </div>
     </div>
     <div class="Q13 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Contains</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String contains
-# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
 # 2 is in the string
 if "2" in "123":
@@ -589,8 +583,7 @@ if "2" not in "456":
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String contains
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
 // 2 is in the string
 if ('123'.includes('2')) {
@@ -606,10 +599,10 @@ if (!'456'.includes('2')) {
       </div>
     </div>
     <div class="Q14 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Substring</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String substring
-# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
 some_string = "0123456"
 
@@ -620,8 +613,7 @@ print(some_string[2:5])
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String substring
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
 
 const someString = '0123456'
 
@@ -638,10 +630,10 @@ console.log(someString.substring(2, 5))
       </div>
     </div>
     <div class="Q15 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Join</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String join
-# https://docs.python.org/3/library/stdtypes.html#str.join
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.join
 some_list = ["a", "b", "c"]
 
 # a,b,c
@@ -651,8 +643,7 @@ print(",".join(some_list))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String join
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 const someList = ['a', 'b', 'c']
 
 // a,b,c
@@ -662,10 +653,10 @@ console.log(someList.join(','))
       </div>
     </div>
     <div class="Q16 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Strip</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String strip
-# https://docs.python.org/3/library/stdtypes.html#str.strip
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.strip
 some_string = "   abc   "
 
 # abc
@@ -675,8 +666,7 @@ print(some_string.strip())
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String strip
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
 const someString = '   abc   '
 
 // abc
@@ -686,10 +676,10 @@ console.log(someString.trim())
       </div>
     </div>
     <div class="Q17 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Sprit</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String split
-# https://docs.python.org/3/library/stdtypes.html#str.split
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.split
 some_string = "a,b,c"
 some_string_split = some_string.split(",")
 
@@ -707,8 +697,7 @@ print(some_string_split[2])
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String split
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 const someString = 'a,b,c'
 const someStringSplit = someString.split(',')
 
@@ -725,10 +714,10 @@ console.log(someStringSplit[2])
       </div>
     </div>
     <div class="Q18 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Replace</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String replace
-# https://docs.python.org/3/library/stdtypes.html#str.replace
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.replace
 some_string = "a b c d e"
 
 # a,b,c,d,e
@@ -738,8 +727,7 @@ print(some_string.replace(" ", ","))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String replace
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 const someString = 'a b c d e'
 
@@ -755,10 +743,10 @@ console.log(someString.replace(/ /g, ','))
       </div>
     </div>
     <div class="Q19 cf ph2-ns mb4">
+      <h3 class="tc normal">String: Search</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># String search
-# https://docs.python.org/3/library/re.html#re.search
+          <pre><code class="language-python"># https://docs.python.org/3/library/re.html#re.search
 # https://github.com/zeeshanu/learn-regex
 import re
 
@@ -775,8 +763,7 @@ if not re.search(r"\d", "iphone x"):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// String search
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
 // https://github.com/zeeshanu/learn-regex
 
@@ -796,10 +783,10 @@ if (!'iphone x'.match(/\d/g)) {
     </div>
     <div class="Q20 cf ph2-ns mb4">
       <h2 class="tc" id="list">List</h2>
+      <h3 class="tc normal">List: Iteration</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List iteration
-some_list = [6, 3, 5]
+          <pre><code class="language-python">some_list = [6, 3, 5]
 
 # 6
 # 3
@@ -811,8 +798,7 @@ for item in some_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List iteration
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 const someList = [6, 3, 5]
 
 // The forEach() method executes a provided function once for each array element.
@@ -828,10 +814,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q21 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Length</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List length
-# https://docs.python.org/3/library/functions.html#len
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#len
 some_list = [1, 4, 9]
 
 # 3
@@ -841,8 +827,7 @@ print(len(some_list))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List length
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
 const someList = [1, 4, 9]
 
 // 3
@@ -852,10 +837,10 @@ console.log(someList.length)
       </div>
     </div>
     <div class="Q22 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Enumerate</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List enumerate
-# https://docs.python.org/3/library/functions.html#enumerate
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#enumerate
 some_list = [6, 3, 5]
 
 # 0 6
@@ -871,8 +856,7 @@ for i, item in enumerate(some_list):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List enumerate
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/foreach
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/foreach
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 const someList = [6, 3, 5]
 
@@ -890,10 +874,10 @@ someList.forEach(function(element, index) {
       </div>
     </div>
     <div class="Q23 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Contains</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List contains
-# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
 # 2 is in the list
 if 2 in [1, 2, 3]:
@@ -907,8 +891,7 @@ if 2 not in [4, 5, 6]:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List contains
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
 // 2 is in the list
 if ([1, 2, 3].includes(2)) {
@@ -924,10 +907,10 @@ if (![4, 5, 6].includes(2)) {
       </div>
     </div>
     <div class="Q24 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Reverse</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List reverse
-# https://docs.python.org/3/library/functions.html#reversed
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#reversed
 # https://docs.python.org/3/library/stdtypes.html#typesseq-list
 some_list = [1, 2, 3, 4]
 
@@ -952,8 +935,7 @@ for item in reversed_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List reverse
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 const someList = [1, 2, 3, 4]
 
 someList.reverse()
@@ -974,10 +956,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q25 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Range Iteration</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List: Range iteration
-# https://docs.python.org/3/library/stdtypes.html#typesseq-range
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#typesseq-range
 
 # 0
 # 1
@@ -1003,9 +985,7 @@ for i in range(6, 3, -1):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List: Range iteration
-
-// 0
+          <pre><code class="language-javascript">// 0
 // 1
 // 2
 // 3
@@ -1032,10 +1012,10 @@ for (let i = 6; i > 3; i--) {
       </div>
     </div>
     <div class="Q26 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Append with Modification</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List append with modification
-# https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 some_list = [1, 2]
 
 some_list.append(3)
@@ -1050,8 +1030,7 @@ for x in some_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List append with modification
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 const someList = [1, 2]
 
 someList.push(3)
@@ -1067,10 +1046,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q27 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Append without Modification</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List append without modification
-# https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
+          <pre><code class="language-python"># https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
 original_list = [1, 2]
 
 # [original_list, 3] => [[1, 2], 3]
@@ -1088,8 +1067,7 @@ for x in new_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List append without modification
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Copy_an_array
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Copy_an_array
 const originalList = [1, 2]
 
 // [originalList, 3] => [[1, 2], 3]
@@ -1108,10 +1086,10 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q28 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Extend with Modification</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List extend with modification
-# https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 some_list = [1]
 
 some_list.extend([2, 3])
@@ -1126,8 +1104,7 @@ for x in some_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List extend with modification
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#A_better_way_to_concatenate_arrays
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#A_better_way_to_concatenate_arrays
 // https://stackoverflow.com/a/35223022/114157
 const someList = [1]
 
@@ -1144,10 +1121,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q29 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Extend without Modification</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List extend without modification
-# https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 original_list = [1]
 new_list = original_list + [2, 3]
 original_list[0] = 5
@@ -1162,8 +1139,7 @@ for x in new_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List extend without modification
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 const originalList = [1]
 const newList = originalList.concat([2, 3])
 originalList[0] = 5
@@ -1179,10 +1155,10 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q30 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Prepend</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List insert
-# https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 some_list = [4, 5]
 
 some_list.insert(0, 3)
@@ -1197,8 +1173,7 @@ for x in some_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List prepend
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
 const someList = [4, 5]
 someList.unshift(3)
 
@@ -1213,10 +1188,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q31 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Remove</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List remove
-# https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 some_list = ["a", "b", "c"]
 del some_list[1]
 
@@ -1229,8 +1204,7 @@ for x in some_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List remove
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 const someList = ['a', 'b', 'c']
 someList.splice(1, 1)
 
@@ -1244,10 +1218,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q32 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Pop</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List pop
-# https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 
 some_list = [1, 2, 3, 4]
 
@@ -1265,8 +1239,7 @@ for x in some_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List pop
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
 
 const someList = [1, 2, 3, 4]
@@ -1287,10 +1260,10 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q33 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Index</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List index
-# https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 some_list = ["a", "b", "c", "d", "e"]
 
 # 2
@@ -1300,8 +1273,7 @@ print(some_list.index("c"))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List index
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 const someList = ['a', 'b', 'c', 'd', 'e']
 
 // 2
@@ -1311,10 +1283,10 @@ console.log(someList.indexOf('c'))
       </div>
     </div>
     <div class="Q34 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Copy</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List copy
-# https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 original_list = [1, 2, 3]
 new_list = original_list[:]  # or original_list.copy()
 
@@ -1331,8 +1303,7 @@ for x in new_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List copy
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Copy_an_array
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Copy_an_array
 
 const originalList = [1, 2, 3]
 const newList = [...originalList]
@@ -1350,10 +1321,10 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q35 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Map</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List map
-# https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
 original_list = [1, 2, 3]
 new_list = [x * 2 for x in original_list]
@@ -1368,8 +1339,7 @@ for x in new_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List map
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 const originalList = [1, 2, 3]
 const newList = originalList.map(x => x * 2)
@@ -1386,10 +1356,10 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q36 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Map (Nested)</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List map (nested)
-# https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
 first_list = [1, 3]
 second_list = [3, 4]
@@ -1411,8 +1381,7 @@ print(combined_list[1][1])
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List map (nested)
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 const firstList = [1, 3]
 const secondList = [3, 4]
@@ -1436,10 +1405,10 @@ console.log(conbinedList[1][1])
       </div>
     </div>
     <div class="Q37 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Filter</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List filter
-# https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
 original_list = [1, 2, 3, 4, 5, 6]
 new_list = [x for x in original_list if x % 2 == 0]
@@ -1454,8 +1423,7 @@ for x in new_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List filter
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
 const originalList = [1, 2, 3, 4, 5, 6]
 const newList = originalList.filter(x => x % 2 == 0)
@@ -1471,10 +1439,10 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q38 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Sum</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List sum
-# https://docs.python.org/3/library/functions.html#sum
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sum
 some_list = [1, 2, 3]
 
 # 6
@@ -1484,8 +1452,7 @@ print(sum(some_list))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List sum
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 const someList = [1, 2, 3]
 const reducer = (accumulator, currentValue) => accumulator + currentValue
 
@@ -1496,10 +1463,10 @@ console.log(someList.reduce(reducer))
       </div>
     </div>
     <div class="Q39 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Zip</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List zip
-# https://docs.python.org/3/library/functions.html#zip
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#zip
 list_1 = [1, 3, 5]
 list_2 = [2, 4, 6]
 
@@ -1513,8 +1480,7 @@ for x, y in zip(list_1, list_2):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List zip
-const list1 = [1, 3, 5]
+          <pre><code class="language-javascript">const list1 = [1, 3, 5]
 const list2 = [2, 4, 6]
 
 // Use map()
@@ -1539,10 +1505,10 @@ zippedList.forEach(element => {
       </div>
     </div>
     <div class="Q40 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Slice</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List slice
-# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 original_list = ["a", "b", "c", "d", "e"]
 new_list = original_list[1:3]
 original_list[1] = "x"
@@ -1556,8 +1522,7 @@ for x in new_list:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List slice
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 const originalList = ['a', 'b', 'c', 'd', 'e']
 const newList = originalList.slice(1, 3)
 originalList[1] = 'x'
@@ -1572,10 +1537,10 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q41 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Sort</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List sort
-# https://docs.python.org/3/library/functions.html#sorted
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sorted
 some_list = [4, 2, 1, 3]
 
 # 1
@@ -1589,8 +1554,7 @@ for item in sorted(some_list):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List sort
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const someList = [4, 2, 1, 3]
 
 // 1
@@ -1605,10 +1569,10 @@ someList.sort().forEach(element => {
       </div>
     </div>
     <div class="Q42 cf ph2-ns mb4">
+      <h3 class="tc normal">List: Sort Custom</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># List sort custom
-# https://docs.python.org/3/library/functions.html#sorted
+          <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sorted
 some_list = [["c", 2], ["b", 3], ["a", 1]]
 
 # a 1
@@ -1621,8 +1585,7 @@ for item in sorted(some_list, key=lambda x: x[1]):
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// List sort custom
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const someList = [['c', 2], ['b', 3], ['a', 1]]
 
 // a 1
@@ -1641,10 +1604,10 @@ someList
     </div>
     <div class="Q43 cf ph2-ns mb4">
       <h2 class="tc" id="dictionary">Dictionary</h2>
+      <h3 class="tc normal">Dictionary: Iteration</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary Iteration
-# https://docs.python.org/3/library/stdtypes.html#dict.items
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.items
 
 some_dict = {"one": 1, "two": 2, "three": 3}
 
@@ -1660,8 +1623,7 @@ for key, value in some_dict.items():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary iteration
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
 
 const someDict = { one: 1, two: 2, three: 3 }
 
@@ -1677,10 +1639,10 @@ Object.entries(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q44 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Contains</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary contains
-# https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
 
 some_dict = {"one": 1, "two": 2, "three": 3}
 
@@ -1696,8 +1658,7 @@ if "four" not in some_dict:
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary contains
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
 
 const someDict = { one: 1, two: 2, three: 3 }
 
@@ -1715,11 +1676,10 @@ if (!someDict.hasOwnProperty('four')) {
       </div>
     </div>
     <div class="Q45 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Add with Modification</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary: Add with modification
-
-original_dict = {"one": 1, "two": 2}
+          <pre><code class="language-python">original_dict = {"one": 1, "two": 2}
 original_dict["three"] = 3
 
 # one 1
@@ -1733,9 +1693,7 @@ for key, value in original_dict.items():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary: Add with modification
-
-const originalDict = { one: 1, two: 2 }
+          <pre><code class="language-javascript">const originalDict = { one: 1, two: 2 }
 originalDict.three = 3
 
 // one 1
@@ -1749,10 +1707,10 @@ Object.entries(originalDict).forEach(element => {
       </div>
     </div>
     <div class="Q46 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Add without Modification</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary: Add without modification
-# https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
+          <pre><code class="language-python"># https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
 
 original_dict = {"one": 1, "two": 2}
 new_dict = {**original_dict, "three": 3}
@@ -1768,8 +1726,7 @@ for key, value in new_dict.items():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary: Add without modification
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
 const originalDict = { one: 1, two: 2 }
 const newDict = { ...originalDict, three: 3 }
 originalDict.one = 100
@@ -1785,10 +1742,10 @@ Object.entries(newDict).forEach(element => {
       </div>
     </div>
     <div class="Q47 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Keys</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary keys
-# https://docs.python.org/3/library/stdtypes.html#dict.keys
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.keys
 
 some_dict = {"one": 1, "two": 2, "three": 3}
 
@@ -1804,8 +1761,7 @@ for x in some_dict.keys():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary keys
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
 const someDict = { one: 1, two: 2, three: 3 }
 
@@ -1820,10 +1776,10 @@ Object.keys(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q48 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Values</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary values
-# https://docs.python.org/3/library/stdtypes.html#dict.values
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.values
 some_dict = {"one": 1, "two": 2, "three": 3}
 
 
@@ -1839,8 +1795,7 @@ for x in some_dict.values():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary Values
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
 const someDict = {
   one: 1,
   two: 2,
@@ -1858,10 +1813,10 @@ Object.values(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q49 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Remove</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary remove
-# https://docs.python.org/3/library/stdtypes.html#dict
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict
 some_dict = {"one": 1, "two": 2, "three": 3}
 
 del some_dict["two"]
@@ -1875,8 +1830,7 @@ for key, value in some_dict.items():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary remove
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
 const someDict = { one: 1, two: 2, three: 3 }
 
 delete someDict.two
@@ -1889,10 +1843,10 @@ Object.entries(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q50 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Get</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary get
-# https://docs.python.org/3/library/stdtypes.html#dict
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict
 
 some_dict = {"one": 1, "two": 2, "three": 3}
 
@@ -1905,8 +1859,7 @@ print(some_dict.get("five", "Doesn't exist"))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary get
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_OR
 
 const someDict = { one: 1, two: 2, three: 3 }
 
@@ -1917,10 +1870,10 @@ console.log(someDict.five || "Doesn't exist")
       </div>
     </div>
     <div class="Q51 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Map</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary map
-# https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 original_list = {"one": 1, "two": 2}
 
 # {"one": 1, "two": 4}
@@ -1935,8 +1888,7 @@ for key, value in new_list.items():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary map
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
 const originalDict = { one: 1, two: 2 }
 const newDict = {}
@@ -1956,10 +1908,10 @@ Object.entries(newDict).forEach(element => {
       </div>
     </div>
     <div class="Q52 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Copy</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary copy
-# https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
+          <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
 
 original_dict = {"one": 1, "two": 2, "three": 3}
 new_dict = original_dict.copy()
@@ -1975,8 +1927,7 @@ for key, value in new_dict.items():
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary copy
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals
 
 const originalDict = { one: 1, two: 2, three: 3 }
 const newDict = { ...originalDict }
@@ -1993,10 +1944,10 @@ Object.entries(newDict).forEach(element => {
       </div>
     </div>
     <div class="Q53 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: to JSON</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary to JSON
-# https://docs.python.org/3/library/json.html#json.dumps
+          <pre><code class="language-python"># https://docs.python.org/3/library/json.html#json.dumps
 import json
 
 some_dict = {"one": 1, "two": 2, "three": 3}
@@ -2012,8 +1963,7 @@ print(json.dumps(some_dict, indent=2))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary to JSON
-//
+          <pre><code class="language-javascript">//
 // Use null as replacer and 2 as space parameter
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
 const someDict = { one: 1, two: 2, three: 3 }
@@ -2030,10 +1980,10 @@ console.log(JSON.stringify(someDict, null, 2))
       </div>
     </div>
     <div class="Q54 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: from JSON</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary from JSON
-# https://docs.python.org/3/library/json.html#json.loads
+          <pre><code class="language-python"># https://docs.python.org/3/library/json.html#json.loads
 import json
 
 some_json = """{
@@ -2051,8 +2001,7 @@ print(dict_from_json["two"])
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary from JSON
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 const someJson = `{
   "one": 1,
   "two": 2,
@@ -2068,10 +2017,10 @@ console.log(dictFromJson.two)
       </div>
     </div>
     <div class="Q55 cf ph2-ns mb4">
+      <h3 class="tc normal">Dictionary: Variable Key</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Dictionary variable key
-some_variable = 2
+          <pre><code class="language-python">some_variable = 2
 some_dict = {(some_variable + 1): "three"}
 
 # three
@@ -2081,8 +2030,7 @@ print(some_dict[3])
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Dictionary variable key
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names
 const someVariable = 2
 const someDict = { [someVariable + 1]: 'three' }
 
@@ -2094,12 +2042,10 @@ console.log(someDict[3])
     </div>
     <div class="Q56 cf ph2-ns mb4">
       <h2 class="tc" id="function">Function</h2>
+      <h3 class="tc normal">Function: Definitions</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Function definitions
-
-
-def add(x, y):
+          <pre><code class="language-python">def add(x, y):
     print(f"Adding {x} and {y}")
     return x + y
 
@@ -2112,8 +2058,7 @@ print(add(1, 2))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Function definitions
-const add = (x, y) => {
+          <pre><code class="language-javascript">const add = (x, y) => {
   console.log(`Adding ${x} and ${y}`)
   return x + y
 }
@@ -2125,12 +2070,10 @@ console.log(add(1, 2))
       </div>
     </div>
     <div class="Q57 cf ph2-ns mb4">
+      <h3 class="tc normal">Function: Keyword Arguments</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Function: Keyword arguments
-
-
-def add(a, b, c):
+          <pre><code class="language-python">def add(a, b, c):
     return a + b + c
 
 
@@ -2141,9 +2084,7 @@ print(add(b=1, a=2, c=3))
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Function: keyword arguments
-
-// TODO: Fill in ?
+          <pre><code class="language-javascript">// TODO: Fill in ?
 // const add = ({ ? }) => ?
 
 const add = ({ a, b, c }) => {
@@ -2163,12 +2104,10 @@ console.log(
       </div>
     </div>
     <div class="Q58 cf ph2-ns mb4">
+      <h3 class="tc normal">Function: Default Arguments</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Function: Default arguments
-
-
-def greet(name, word="Hello"):
+          <pre><code class="language-python">def greet(name, word="Hello"):
     print(f"{word} {name}")
 
 
@@ -2182,8 +2121,7 @@ greet("World", "Goodbye")
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Function: Default arguments
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
 const greet = (name, word = 'Hello') => {
   console.log(`${word} ${name}`)
 }
@@ -2198,12 +2136,10 @@ greet('World', 'Goodbye')
       </div>
     </div>
     <div class="Q59 cf ph2-ns mb4">
+      <h3 class="tc normal">Function: Default Keyword Arguments</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Function: Default keyword arguments
-
-
-def greet(name="World", word="Hello"):
+          <pre><code class="language-python">def greet(name="World", word="Hello"):
     print(f"{word} {name}")
 
 
@@ -2217,8 +2153,7 @@ greet(name="Programming")
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Function: Default keyword arguments
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Setting_a_function_parameter's_default_value
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Setting_a_function_parameter's_default_value
 
 // TODO: Fill in ?
 // const greet = ({ ? }) => ?
@@ -2236,10 +2171,10 @@ greet({ name: 'Programming' })
       </div>
     </div>
     <div class="Q60 cf ph2-ns mb4">
+      <h3 class="tc normal">Function: Positional Arguments</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Function: Positional arguments
-# https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
 
 
 def positional_args(a, b, *args):
@@ -2259,8 +2194,7 @@ positional_args(1, 2, 3, 4)
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Function definitions
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 const positionalArgs = (a, b, ...args) => {
   console.log(a)
@@ -2280,10 +2214,10 @@ positionalArgs(1, 2, 3, 4)
       </div>
     </div>
     <div class="Q61 cf ph2-ns mb4">
+      <h3 class="tc normal">Function: Variable Keyword Arguments</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Function: Variable keyword arguments
-# https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
+          <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
 
 
 def func_1(**kwargs):
@@ -2314,8 +2248,7 @@ func_2(1, 2, 3, a=4, b=5)
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Function: Variable keyword arguments
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 // TODO: fill ?
 // const func1 = (?) => ?
@@ -2353,12 +2286,10 @@ func2(1, { a: 4, b: 5 }, 2, 3)
     </div>
     <div class="Q62 cf ph2-ns mb4">
       <h2 class="tc" id="class">Class</h2>
+      <h3 class="tc normal">Class: Basics</h3>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-python"># Class Basics
-
-
-class Duck:
+          <pre><code class="language-python">class Duck:
     def __init__(self, name):
         self.name = name
 
@@ -2427,8 +2358,7 @@ print(rubberDuck.eye_color)
       </div>
       <div class="fl w-100 w-50-ns pa2">
         <div class="overflow-auto outline bg-white pa3">
-          <pre><code class="language-javascript">// Class basics
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
+          <pre><code class="language-javascript">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions
