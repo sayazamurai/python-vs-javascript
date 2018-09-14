@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>How to write X in Python 3 and JavaScript (ES2015)</title>
+  <title>How to write X in both Python 3 and JavaScript (ES2015)</title>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
   <link rel="stylesheet" href="static/prism-base16-atelierplateau.light.css"/>
   <style>
@@ -34,25 +34,25 @@
   </div>
 
   <div class="title-container center mw7 ph3">
-    <h1 class="title f1-ns f2 tc pt3 pt5-ns lh-title">
-      How to write X in Python 3 and JavaScript (ES2015)
+    <h1 class="title f1-ns f3 tc pt3 pt5-ns lh-title">
+      How to write X in both Python 3 and JavaScript (ES2015)
     </h1>
   </div>
   <div class="header-text-container center mw7 pb3 ph3">
     <p class="header-text f4-ns">Python and JavaScript are <a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">two of the most popular programming languages</a>.
- If you're are Python programmer learning JavaScript, or a JavaScript programmer learning Python, this handy cheat sheet might help you. <a href="https://github.com/sayazamurai/python-vs-javascript">Pull requests are welcome</a>!</p>
+ If you're are Python programmer learning JavaScript, or a JavaScript programmer learning Python, this handy cheat sheet might help you.</p><p class="header-text f4-ns">This page is open sourced on <a href="https://github.com/sayazamurai/python-vs-javascript">GitHub</a>. Pull requests are welcome!</p>
   </div>
   <div class="about-the-author center mw7 pb3 ph3">
-    <h2 class="tc">About the Author</h2>
-    <div class="center tc">
-      <img class="ba b--white bw2" src="static/images/saya-profile.jpg" style="display:inline-block; height:130px; width:130px; border-radius: 30%;">
+    <h2 class="tc f3-ns f4 mb2">About the Author</h2>
+    <div class="center tc mb3">
+      <img class="ba b--white bw2 dib br4" src="static/images/saya-profile.jpg" width="130" height="130" />
     </div>
     <p class="profile-text mw6 center" style="margin-top:0;">
       I'm Saya, a jewelry designer and a junior JavaScript/Python developer. Find me on Twitter: <a href="https://twitter.com/sayajewels">@sayajewels</a>
     </p>
   </div>
-  <div class="tabele-of-contents center mw7 pb3 ph3">
-    <h2 class="tc">Table of Contents</h2>
+  <div class="tabele-of-contents center mw7 pb3 ph3 mb4">
+    <h2 class="tc f3-ns f4 mb2">Table of Contents</h2>
     <ul class="list pl0 tc">
       <li class="dib mh1"><a href="#math">Math</a></li>
       <li class="dib mh1"><a href="#control-flow">Control Flow</a></li>
@@ -65,8 +65,8 @@
   </div>
   <div class="mw9 center ph3-ns ph2">
     <div class="Q01 cf ph2-ns mb4">
-      <h2 class="tc" id="math">Math</h2>
-      <h3 class="tc normal">Math: <strong>Absolute Value</strong></h3>
+      <h2 class="tc f3-ns f4" id="math">Math</h2>
+      <h3 class="tc normal f4-ns f5 mb2">Math: <strong>Absolute Value</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#abs
@@ -89,7 +89,7 @@ console.log(Math.abs(50))</code></pre>
       </div>
     </div>
     <div class="Q02 cf ph2-ns mb4">
-      <h3 class="tc normal">Math: <strong>Round numbers</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Math: <strong>Round numbers</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">import math
@@ -121,7 +121,7 @@ console.log(Math.round(1.5))
       </div>
     </div>
     <div class="Q03 cf ph2-ns mb4">
-      <h3 class="tc normal">Math: <strong>Max and Min</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Math: <strong>Max and Min</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#max
@@ -149,8 +149,8 @@ console.log(Math.min(80, 40))
       </div>
     </div>
     <div class="Q04 cf ph2-ns mb4">
-      <h2 class="tc" id="control-flow">Control Flow</h2>
-      <h3 class="tc normal">Control Flow: <strong>If else</strong></h3>
+      <h2 class="tc f3-ns f4" id="control-flow">Control Flow</h2>
+      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>If else</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#if-statements
@@ -189,7 +189,7 @@ if (someNumber === 1) {
       </div>
     </div>
     <div class="Q05 cf ph2-ns mb4">
-      <h3 class="tc normal">Control Flow: <strong>Ternary</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Ternary</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">x = 2
@@ -226,7 +226,7 @@ console.log(y % 2 === 0 ? 'even' : 'odd')
       </div>
     </div>
     <div class="Q06 cf ph2-ns mb4">
-      <h3 class="tc normal">Control Flow: <strong>Boolean</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Boolean</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># yes
@@ -379,7 +379,7 @@ if (!!!null) {
       </div>
     </div>
     <div class="Q07 cf ph2-ns mb4">
-      <h3 class="tc normal">Control Flow: <strong>Exceptions</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Exceptions</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/errors.html
@@ -408,7 +408,7 @@ try {
       </div>
     </div>
     <div class="Q08 cf ph2-ns mb4">
-      <h3 class="tc normal">Control Flow: <strong>Continue / Break</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Control Flow: <strong>Continue / Break</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
@@ -458,8 +458,8 @@ for (let i = 1; i <= 100; i = i + 1) {
       </div>
     </div>
     <div class="Q09 cf ph2-ns mb4">
-      <h2 class="tc" id="string">String</h2>
-      <h3 class="tc normal">String: <strong>Length</strong></h3>
+      <h2 class="tc f3-ns f4" id="string">String</h2>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Length</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#len
@@ -482,7 +482,7 @@ console.log(someString.length)
       </div>
     </div>
     <div class="Q10 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Interpolation</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Interpolation</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">x = "Hello"
@@ -503,7 +503,7 @@ console.log(`${x} World`)
       </div>
     </div>
     <div class="Q11 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Multiline</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Multiline</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">x = """------
@@ -542,7 +542,7 @@ console.log(x)
       </div>
     </div>
     <div class="Q12 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>String to Integer</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>String to Integer</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#int
@@ -569,7 +569,7 @@ console.log(number1 + 2)
       </div>
     </div>
     <div class="Q13 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Contains</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Contains</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
@@ -602,7 +602,7 @@ if (!'456'.includes('2')) {
       </div>
     </div>
     <div class="Q14 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Substring</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Substring</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
@@ -633,7 +633,7 @@ console.log(someString.substring(2, 5))
       </div>
     </div>
     <div class="Q15 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Join</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Join</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.join
@@ -656,7 +656,7 @@ console.log(someList.join(','))
       </div>
     </div>
     <div class="Q16 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Strip</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Strip</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.strip
@@ -679,7 +679,7 @@ console.log(someString.trim())
       </div>
     </div>
     <div class="Q17 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Sprit</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Sprit</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.split
@@ -717,7 +717,7 @@ console.log(someStringSplit[2])
       </div>
     </div>
     <div class="Q18 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Replace</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Replace</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#str.replace
@@ -746,7 +746,7 @@ console.log(someString.replace(/ /g, ','))
       </div>
     </div>
     <div class="Q19 cf ph2-ns mb4">
-      <h3 class="tc normal">String: <strong>Search</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">String: <strong>Search</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/re.html#re.search
@@ -785,8 +785,8 @@ if (!'iphone x'.match(/\d/g)) {
       </div>
     </div>
     <div class="Q20 cf ph2-ns mb4">
-      <h2 class="tc" id="list">List/Array</h2>
-      <h3 class="tc normal">List/Array: <strong>Iteration</strong></h3>
+      <h2 class="tc f3-ns f4" id="list">List/Array</h2>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Iteration</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">some_list = [6, 3, 5]
@@ -817,7 +817,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q21 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Length</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Length</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#len
@@ -840,7 +840,7 @@ console.log(someList.length)
       </div>
     </div>
     <div class="Q22 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Enumerate</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Enumerate</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#enumerate
@@ -877,7 +877,7 @@ someList.forEach(function(element, index) {
       </div>
     </div>
     <div class="Q23 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Contains</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Contains</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
@@ -910,7 +910,7 @@ if (![4, 5, 6].includes(2)) {
       </div>
     </div>
     <div class="Q24 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Reverse</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Reverse</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#reversed
@@ -959,7 +959,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q25 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Range Iteration</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Range Iteration</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#typesseq-range
@@ -1015,7 +1015,7 @@ for (let i = 6; i > 3; i--) {
       </div>
     </div>
     <div class="Q26 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Append with Modification</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Append with Modification</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
@@ -1049,7 +1049,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q27 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Append without Modification</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Append without Modification</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
@@ -1089,7 +1089,7 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q28 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Extend with Modification</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Extend with Modification</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
@@ -1124,7 +1124,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q29 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Extend without Modification</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Extend without Modification</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
@@ -1158,7 +1158,7 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q30 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Prepend</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Prepend</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
@@ -1191,7 +1191,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q31 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Remove</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Remove</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
@@ -1221,7 +1221,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q32 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Pop</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Pop</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
@@ -1263,7 +1263,7 @@ someList.forEach(element => {
       </div>
     </div>
     <div class="Q33 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Index</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Index</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
@@ -1286,7 +1286,7 @@ console.log(someList.indexOf('c'))
       </div>
     </div>
     <div class="Q34 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Copy</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Copy</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
@@ -1324,7 +1324,7 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q35 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Map</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Map</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
@@ -1359,7 +1359,7 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q36 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Map (Nested)</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Map (Nested)</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
@@ -1408,7 +1408,7 @@ console.log(conbinedList[1][1])
       </div>
     </div>
     <div class="Q37 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Filter</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Filter</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
@@ -1442,7 +1442,7 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q38 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Sum</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Sum</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sum
@@ -1466,7 +1466,7 @@ console.log(someList.reduce(reducer))
       </div>
     </div>
     <div class="Q39 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Zip</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Zip</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#zip
@@ -1508,7 +1508,7 @@ zippedList.forEach(element => {
       </div>
     </div>
     <div class="Q40 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Slice</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Slice</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
@@ -1540,7 +1540,7 @@ newList.forEach(element => {
       </div>
     </div>
     <div class="Q41 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Sort</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Sort</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sorted
@@ -1572,7 +1572,7 @@ someList.sort().forEach(element => {
       </div>
     </div>
     <div class="Q42 cf ph2-ns mb4">
-      <h3 class="tc normal">List/Array: <strong>Sort Custom</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">List/Array: <strong>Sort Custom</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/functions.html#sorted
@@ -1606,8 +1606,8 @@ someList
       </div>
     </div>
     <div class="Q43 cf ph2-ns mb4">
-      <h2 class="tc" id="dictionary">Dictionary/Object</h2>
-      <h3 class="tc normal">Dictionary/Object: <strong>Iteration</strong></h3>
+      <h2 class="tc f3-ns f4" id="dictionary">Dictionary/Object</h2>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Iteration</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.items
@@ -1642,7 +1642,7 @@ Object.entries(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q44 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Contains</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Contains</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
@@ -1679,7 +1679,7 @@ if (!someDict.hasOwnProperty('four')) {
       </div>
     </div>
     <div class="Q45 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Add with Modification</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Add with Modification</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">original_dict = {"one": 1, "two": 2}
@@ -1710,7 +1710,7 @@ Object.entries(originalDict).forEach(element => {
       </div>
     </div>
     <div class="Q46 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Add without Modification</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Add without Modification</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations
@@ -1745,7 +1745,7 @@ Object.entries(newDict).forEach(element => {
       </div>
     </div>
     <div class="Q47 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Keys</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Keys</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.keys
@@ -1779,7 +1779,7 @@ Object.keys(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q48 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Values</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Values</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict.values
@@ -1816,7 +1816,7 @@ Object.values(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q49 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Remove</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Remove</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict
@@ -1846,7 +1846,7 @@ Object.entries(someDict).forEach(element => {
       </div>
     </div>
     <div class="Q50 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Get</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Get</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#dict
@@ -1873,7 +1873,7 @@ console.log(someDict.five || "Doesn't exist")
       </div>
     </div>
     <div class="Q51 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Map</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Map</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/datastructures.html#dictionaries
@@ -1911,7 +1911,7 @@ Object.entries(newDict).forEach(element => {
       </div>
     </div>
     <div class="Q52 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Copy</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Copy</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
@@ -1947,7 +1947,7 @@ Object.entries(newDict).forEach(element => {
       </div>
     </div>
     <div class="Q53 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>to JSON</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>to JSON</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/json.html#json.dumps
@@ -1983,7 +1983,7 @@ console.log(JSON.stringify(someDict, null, 2))
       </div>
     </div>
     <div class="Q54 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>from JSON</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>from JSON</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/library/json.html#json.loads
@@ -2020,7 +2020,7 @@ console.log(dictFromJson.two)
       </div>
     </div>
     <div class="Q55 cf ph2-ns mb4">
-      <h3 class="tc normal">Dictionary/Object: <strong>Variable Key</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Dictionary/Object: <strong>Variable Key</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">some_variable = 2
@@ -2044,8 +2044,8 @@ console.log(someDict[3])
       </div>
     </div>
     <div class="Q56 cf ph2-ns mb4">
-      <h2 class="tc" id="function">Function</h2>
-      <h3 class="tc normal">Function: <strong>Definitions</strong></h3>
+      <h2 class="tc f3-ns f4" id="function">Function</h2>
+      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Definitions</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def add(x, y):
@@ -2073,7 +2073,7 @@ console.log(add(1, 2))
       </div>
     </div>
     <div class="Q57 cf ph2-ns mb4">
-      <h3 class="tc normal">Function: <strong>Keyword Arguments</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Keyword Arguments</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def add(a, b, c):
@@ -2107,7 +2107,7 @@ console.log(
       </div>
     </div>
     <div class="Q58 cf ph2-ns mb4">
-      <h3 class="tc normal">Function: <strong>Default Arguments</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Default Arguments</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def greet(name, word="Hello"):
@@ -2139,7 +2139,7 @@ greet('World', 'Goodbye')
       </div>
     </div>
     <div class="Q59 cf ph2-ns mb4">
-      <h3 class="tc normal">Function: <strong>Default Keyword Arguments</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Default Keyword Arguments</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">def greet(name="World", word="Hello"):
@@ -2174,7 +2174,7 @@ greet({ name: 'Programming' })
       </div>
     </div>
     <div class="Q60 cf ph2-ns mb4">
-      <h3 class="tc normal">Function: <strong>Positional Arguments</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Positional Arguments</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
@@ -2217,7 +2217,7 @@ positionalArgs(1, 2, 3, 4)
       </div>
     </div>
     <div class="Q61 cf ph2-ns mb4">
-      <h3 class="tc normal">Function: <strong>Variable Keyword Arguments</strong></h3>
+      <h3 class="tc normal f4-ns f5 mb2">Function: <strong>Variable Keyword Arguments</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python"># https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
@@ -2288,8 +2288,8 @@ func2(1, { a: 4, b: 5 }, 2, 3)
       </div>
     </div>
     <div class="Q62 cf ph2-ns mb4">
-      <h2 class="tc" id="class">Class</h2>
-      <h3 class="tc normal">Class: <strong>Basics</strong></h3>
+      <h2 class="tc f3-ns f4" id="class">Class</h2>
+      <h3 class="tc normal f4-ns f5 mb2">Class: <strong>Basics</strong></h3>
       <div class="fl w-100 w-50-l pa2">
         <div class="overflow-auto ba bw2 b--white br4">
           <pre><code class="language-python">class Duck:
