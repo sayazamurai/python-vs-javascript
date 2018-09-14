@@ -817,7 +817,7 @@ for i, item in enumerate(some_list):
 // 1 3
 // 2 5
 
-someList.forEach(function(element, index) {
+someList.forEach((element, index) => {
   console.log(`${index} ${element}`)
 })
 </code></pre>
@@ -1711,11 +1711,7 @@ for x in some_dict.values():
       <div class="fl w-100 w-50-l pa2 mb3">
         <h4 class="f5 mt0 mb2 normal"><strong>JavaScript (ES2015)</strong> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values"><code>values</code></a></h4>
         <div class="overflow-auto ba bw2 b--white br4">
-          <pre><code class="language-javascript">const someDict = {
-  one: 1,
-  two: 2,
-  three: 3
-}
+          <pre><code class="language-javascript">const someDict = { one: 1, two: 2, three: 3 }
 
 // 1
 // 2
